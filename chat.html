@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>PiPi</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+
+    <body>
+    
+    <main class="content">
+
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="gradient-custom">
+        <div class="py-5">
+    
+            <div style="display: flex;">
+                <div style="text-align: left;">
+                  <img src="Resources/banner.png" width="700" height="250"/>
+                </div>
+                
+                <nav class="Menu" Style="text-align: left;">
+                    
+                  <ul id="personality-type-button-wrapper"style="text-align: right;">
+                    <h1 class="font-weight-bold mb-1">How do you like me?</h1>
+                    <button class="personality selected" onclick="changePersonalityTypeState('compassionate')" class="btn btn" >Compassionate</button> 
+                    <button class="personality"onclick="changePersonalityTypeState('frisky')" class="btn btn" >Frisky</button>
+                    <button class="personality"onclick="changePersonalityTypeState('comedian') "class="btn btn">Funny</button>
+                     
+                  </ul>
+                </nav>
+              </div>
+            <p></p>
+            <div class="flex-grow-0 py-3 px-4 border-top" style="color: white;"></div>
+
+                
+            <div class="card-place">
+                <div class="row g-0">
+                    <div class="col-12 col-lg-5 col-xl-3 border-right">
+                        
+
+                        <div class="px-4 d-none d-md-block">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1">
+                                    <button type="button" id="button-new-conversation" class="btn btn-pink button-sites" style="color:white; background-color: rgb(88, 155, 172);">New Conversation</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="messages-wrapper" id="messages-wrapper">
+
+                        <a href="#" id="chat-bo" class="list-group-item list-group-item-action border-0">
+                            <div class="d-flex align-items-start" >
+                                <img src="https://cdn.icon-icons.com/icons2/1371/PNG/512/robot02_90810.png" class="rounded-circle mr-1" alt="Vanessa Tucker" width="40" height="40">
+                                <div class="flex-grow-1 ml-3">
+                                    Conversation 1
+                                    <div id = "top_preview_conversation" class="small"><span class="fas fa-circle chat-online"></span> Initiate conversation </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                        <hr class="d-block d-lg-none mt-1 mb-0">
+                    </div>
+                    
+                    <div class="col-12 col-lg-7 col-xl-9 dopadding">
+
+    
+                        <div class="position-relative">
+                            <div class="chat-messages p-4" style="color: white;">
+
+
+
+                            
+                        
+                            </div>
+                        </div>
+    
+                        <div class="flex-grow-0 py-3 px-4 border-top absolute">
+                            <div class="input-group">
+                                <input type="text" id ="send-button-text" class="form-control" placeholder="Type your message">
+                                <button class="btn btn" onclick=askQuestion() style="color:white; background-color: rgb(88, 155, 172);" id="send-button"><b>Send</b></button>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <br>
+                   
+                </div>
+                <br>
+            
+                
+            </div>
+            <footer>
+            <div class="credits">
+                <a href="landing.html" class="flex-grow-0" style="color: rgb(212, 202, 202)">HOME    </a>
+                <span class="flex-grow-0" style="color: rgb(202, 16, 150) ">_____ PassionatePal company app made by</span>
+                <a href="about.html" class="flex-grow-0" style="color: rgb(212, 202, 202)">PPTECH</a>
+                <span class="flex-grow-0" style="color: rgb(202, 16, 150) ">_____ </span>
+                <a href="login.html" class="flex-grow-0" style="color: rgb(212, 202, 202)">    LOGOUT</a>
+              </div></footer>
+        </div>
+        </div>
+    </main>
+    
+
+    <script src="./script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+</body>
+</html> 
